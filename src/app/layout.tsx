@@ -1,5 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
+
+import { SiteNav } from "@/components/site-nav";
+
 import "./globals.css";
 
 const geistSans = Geist({
@@ -13,8 +16,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Next API Routes",
-  description: "Ejercicio 1 con Next.js, Prisma y App Router",
+  title: "WEBAVANZADO12",
+  description: "Sistema de biblioteca con Next.js, Prisma y Supabase",
 };
 
 export default function RootLayout({
@@ -27,7 +30,12 @@ export default function RootLayout({
       lang="es"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full">
+        <div className="min-h-screen bg-[radial-gradient(circle_at_top,_rgba(245,158,11,0.18),_transparent_38%),linear-gradient(180deg,_#0b1120_0%,_#111827_35%,_#f8fafc_35%,_#f8fafc_100%)]">
+          <SiteNav />
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
