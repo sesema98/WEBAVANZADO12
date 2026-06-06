@@ -1,3 +1,7 @@
+# WEBAVANZADO12
+
+Proyecto de biblioteca con Next.js, Prisma y Supabase para el curso de Web Avanzado.
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
